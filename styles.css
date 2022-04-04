@@ -1,0 +1,72 @@
+.container {
+    height: 700px;
+    width: 500px;
+    
+}
+
+.display {
+    height: 200px;
+    width: 450px;
+    background-color: lightgrey;
+    border-style: solid;
+    border-color: black;
+    border: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 25px;
+}
+
+.calculator {
+    height: 700px;
+    width: 500px;
+    border-style: solid;
+    border: 12px;
+    border-radius: 6%;
+    background-color: darkslategrey;
+}
+
+.numberButtons {
+    width: 350px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 15px;
+    position: relative;
+    top: 275px;
+    height: 350px;
+}
+
+.operatorButtons {
+    height: 350px;
+    width: 100px;
+    display: grid;
+    grid-template-row: repeat(1, 1fr);
+    position: relative;
+    left: 80%;
+    bottom: 75px;
+}
+
+#addbtn {
+    grid-row-start: 1;
+}
+
+#subtractbtn {
+    grid-row: 2;
+}
+
+#multiplybtn {
+    grid-row: 3;
+}
+
+#dividebtn {
+    grid-row: 4;
+}
+
+#equalbtn {
+    grid-row: 5;
+}
+
+#clearbtn {
+    grid-row: 6;
+}
