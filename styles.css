@@ -1,22 +1,8 @@
 .container {
-    height: 700px;
-    width: 500px;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
-.display {
-    height: 200px;
-    width: 450px;
-    background-color: lightgrey;
-    border-style: solid;
-    border-color: black;
-    border: 8px;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    top: 25px;
-}
-
 .calculator {
     height: 700px;
     width: 500px;
@@ -24,49 +10,55 @@
     border: 12px;
     border-radius: 6%;
     background-color: darkslategrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.displayValue {
+    height: 200px;
+    width: 450px;
+    background-color: lightgrey;
+    border-style: solid;
+    border-color: black;
+    border: 8px;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 450px;
+}
+
+.calcButtons {
+    display: flex;
+    flex-wrap: wrap;
+}
 .numberButtons {
     width: 350px;
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-gap: 15px;
-    position: relative;
-    top: 275px;
     height: 350px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-self: flex-end;
+    gap: 15px;
+    margin-left: 15px;
+    margin-top: 250px;
+}
+
+.numberButtons>* {
+    flex: 1 1 80px;
 }
 
 .operatorButtons {
-    height: 350px;
-    width: 100px;
-    display: grid;
-    grid-template-row: repeat(1, 1fr);
-    position: relative;
-    left: 80%;
-    bottom: 75px;
+    height: 275px;
+    width: 275px;
+    display: flex;
+    flex: 1;
+    flex-flow: column nowrap;
+    margin-top: 250px;
+    margin-left: 10px;
+    gap: 10px;
+
 }
 
-#addbtn {
-    grid-row-start: 1;
-}
-
-#subtractbtn {
-    grid-row: 2;
-}
-
-#multiplybtn {
-    grid-row: 3;
-}
-
-#dividebtn {
-    grid-row: 4;
-}
-
-#equalbtn {
-    grid-row: 5;
-}
-
-#clearbtn {
-    grid-row: 6;
+.operatorButtons>* {
+    flex: 0 0 20%;
 }
