@@ -25,3 +25,15 @@ function operate (a, b) {
 operate(a, b);
 
 
+
+let buttonFired = document.querySelectorAll('button').forEach(button => {
+    button.addEventListener('click', () => {
+        const value = button.value;
+        return document.querySelector('.displayValue').textContent = value;
+        });
+});
+
+
+
+
+
