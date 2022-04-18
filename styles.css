@@ -11,8 +11,9 @@
     border-radius: 6%;
     background-color: darkslategrey;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
 }
 
 .displayValue {
@@ -22,26 +23,28 @@
     border-style: solid;
     border-color: black;
     border: 8px;
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 450px;
+    margin-top: 20px;
 }
+
 
 .calcButtons {
     display: flex;
     flex-wrap: wrap;
 }
+
+
 .numberButtons {
     width: 350px;
     height: 350px;
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-start;
-    align-self: flex-end;
+    justify-content: flex-end;
+    align-self: center;
+    margin-top: 30px;
+    margin-left: 10px;
     gap: 15px;
-    margin-left: 15px;
-    margin-top: 250px;
-}
+   
+ }
 
 .numberButtons>* {
     flex: 1 1 80px;
@@ -53,8 +56,9 @@
     display: flex;
     flex: 1;
     flex-flow: column nowrap;
-    margin-top: 250px;
+    margin-top: 30px;
     margin-left: 10px;
+    margin-right: 10px;
     gap: 10px;
 
 }
